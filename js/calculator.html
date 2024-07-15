@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Сalculator</title>
+    <link rel="shortcut icon" href="I.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <form name="calculator" id="calculator">
+        
+   <input type="text" id="result" name="result" value="">
+   <p>
+    <input type="button" id="number" value="7" onClick="document.calculator.result.value+='7'">
+    <input type="button" id="number" value="8" onClick="document.calculator.result.value+='8'">
+    <input type="button" id="number" value="9" onClick="document.calculator.result.value+='9'">
+    <input type="button" id="maths"  value="÷" onClick="document.calculator.result.value+='/'">
+   </p>
+   <p> 
+    <input type="button" id="number" value="4" onClick="document.calculator.result.value+='4'">
+    <input type="button" id="number" value="5" onClick="document.calculator.result.value+='5'">
+    <input type="button" id="number" value="6" onClick="document.calculator.result.value+='6'">
+    <input type="button" id="maths"  value="×" onClick="document.calculator.result.value+='*'">
+    </p>
+    <p>
+    <input type="button" id="number" value="1" onClick="document.calculator.result.value+='1'">
+    <input type="button" id="number" value="2" onClick="document.calculator.result.value+='2'">
+    <input type="button" id="number" value="3" onClick="document.calculator.result.value+='3'">  
+    <input type="button" id="maths"  value="-" onClick="document.calculator.result.value+='-'">
+    </p>
+    <p>
+    <input type="button" id="C"      value="C" onClick="C()">
+    <input type="button" id="number" value="0" onClick="document.calculator.result.value+='0'">
+    <input type="button" id="maths"  value="=" onClick="result()">
+        
+    <input type="button" id="maths"  value="+" onClick="document.calculator.result.value+='+'">
+    </p> 
+ 
+   <script src="scripts\main.js"></script>
+</form>
+</body>
+</html>
