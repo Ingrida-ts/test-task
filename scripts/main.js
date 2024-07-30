@@ -1,16 +1,18 @@
 
 
-function C() {
-    document.getElementById('result').value = " ";
-}
+ function Clear() {
+            let input=document.getElementById('result');
+            input.value= " ";
+            
+        }
 
-
-function result() {
+function calculateResult() {
+    let input=document.getElementById('result')
     try {
-        document.getElementById('result').value = eval(document.getElementById('result').value);
+        input.value = eval(input.value);
     } 
     catch (error) {
-        document.getElementById('result').value = 'Error';
+        input.value = 'Error';
     }
 }
 

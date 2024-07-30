@@ -12,7 +12,7 @@
     
     <form name="calculator" id="calculator">
         
-   <input type="text" id="result" name="result" value="">
+   <input type="text" id="result" name="result" value=" ">
    <p>
     <input type="button" id="number" value="7" onClick="document.calculator.result.value+='7'">
     <input type="button" id="number" value="8" onClick="document.calculator.result.value+='8'">
@@ -32,14 +32,17 @@
     <input type="button" id="maths"  value="-" onClick="document.calculator.result.value+='-'">
     </p>
     <p>
-    <input type="button" id="C"      value="C" onClick="C()">
+       
+    <input type="button" id="C"      value="C" onClick="Clear()">
+  
     <input type="button" id="number" value="0" onClick="document.calculator.result.value+='0'">
-    <input type="button" id="maths"  value="=" onClick="result()">
+    <input type="button" id="maths"  value="=" onClick="calculateResult()">
         
     <input type="button" id="maths"  value="+" onClick="document.calculator.result.value+='+'">
     </p> 
  
-   <script src="scripts\main.js"></script>
+  <script src="scripts\main.js"></script>
+
 </form>
 </body>
 </html>
